@@ -4,7 +4,7 @@ version: '3.9'
 services:
   reverseproxy:
     container_name: single-https
-    image: alm-nexus-devsecops-docker.myrolex.com/nginx:latest
+    image: nginx:latest
     volumes:
     - ./single-https.conf:/etc/nginx/conf.d/default.conf
     - ./index.html:/usr/share/nginx/html/index.html
